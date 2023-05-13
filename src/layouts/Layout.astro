@@ -22,6 +22,11 @@ import "../styles/global.css"
 </html>
 <style is:global>
   @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+  /*  add the font from local dir called game.ttf */
+  @font-face {
+    font-family: "game";
+    src: url("/assets/game.ttf");
+  }
   :root {
     --accent: 83, 83, 8;
     --pad: 20%;
@@ -33,7 +38,7 @@ import "../styles/global.css"
     );
   }
   html {
-    font-family: "Press Start 2P", cursive, system-ui, sans-serif;
+    font-family: game,"Press Start 2P", cursive, system-ui, sans-serif;
     background-color: #264d5b;
     height: 100%;
     --scrollbarBG: #070609;
